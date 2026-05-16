@@ -57,7 +57,7 @@ export default function Hero() {
             </a>
             
             <a
-              href="/Brijesh_Rakholiya_Web_Dev_Resume.pdf"
+              href={`${import.meta.env.BASE_URL}Brijesh_Rakholiya_Web_Dev_Resume.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-4 text-white hover:text-primary transition-all duration-300 font-medium hover:scale-105"
