@@ -10,6 +10,7 @@ import wanderlust from '../assets/Wanderlust.jpg';
 import listing from '../assets/screencapture-localhost-8080-listings-678bd4d5b171d626a995ab19-2025-01-18-21_51_59.jpg';
 import OmniMeet1 from '../assets/OmniMeet1.png';
 import OmniMeet2 from '../assets/OmniMeet2.png';
+import MacbookScroll from '../components/MacbookScroll';
 
 const allProjects = [
   {
@@ -129,7 +130,11 @@ export default function ProjectsPage() {
   };
 
   return (
-    <div className="pt-32 pb-24 min-h-screen bg-white text-black relative overflow-hidden">
+    <>
+      <div className="hidden lg:block">
+        <MacbookScroll />
+      </div>
+      <div className="pt-32 pb-24 min-h-screen bg-white text-black relative">
 
       <div className="absolute inset-x-0 top-0 h-24 md:h-42 bg-linear-to-b from-black to-transparent pointer-events-none z-10 opacity-50" />
       
@@ -284,6 +289,7 @@ export default function ProjectsPage() {
           ))}
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
